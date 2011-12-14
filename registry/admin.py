@@ -5,7 +5,9 @@ class GeoNodeInstanceAdmin(admin.ModelAdmin):
     list_display = ('name', 'url', 'created_at')
 
 class GeoNodeStatusAdmin(admin.ModelAdmin):
-    list_display = ('instance', 'layer_count', 'faulty_layers_count', 'map_count', 'faulty_maps', 'backup_date', 'created_at')
+    list_display = ('instance', 'layer_count', 'faulty_layers_count',
+                     'map_count', 'faulty_maps_count',
+                     'backup_date', 'created_at')
 
 class FaultyLayerAdmin(admin.ModelAdmin):
     list_display = ('name', 'instance', 'url', 'reason')
