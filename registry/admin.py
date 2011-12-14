@@ -10,7 +10,7 @@ class GeoNodeStatusAdmin(admin.ModelAdmin):
                      'backup_date', 'created_at')
 
 class FaultyLayerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'instance', 'url', 'reason')
+    list_display = ('name', 'status', 'url', 'reason')
 
 admin.site.register(GeoNodeInstance, GeoNodeInstanceAdmin)
 admin.site.register(GeoNodeStatus, GeoNodeStatusAdmin)
