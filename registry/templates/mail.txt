@@ -1,0 +1,11 @@
+The following geonodes are having trouble.
+
+
+{% for geonode in geonodes %}
+{{geonode.name}}: {{geonode.url}}
+{% empty %}
+No geobode with problems.
+{% endfor %}
+
+This affects the following maps:
+
